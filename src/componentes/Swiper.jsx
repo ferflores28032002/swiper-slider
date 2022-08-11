@@ -17,6 +17,7 @@ export default function Swipe() {
   return (
     <div className="contenedor">
       <Swiper
+        loop={true}
         className="sliders"
         modules={[
           Navigation,
@@ -26,9 +27,9 @@ export default function Swipe() {
           Autoplay,
           EffectFade,
         ]}
-        navigation
+        // navigation
         pagination={{ clickable: true }}
-        autoplay={true}
+        autoplay={{ delay: 500 }}
         // effect="fade"
         // scrollbar={{ draggable: true }}
         breakpoints={{
